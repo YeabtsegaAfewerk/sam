@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-icon" onclick="responsiveMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="logo">
+            Sam
+        </div>
+        <div class="menu" id="menuItems">
+            <a href="#home" class="menu-link">Home</a>
+            <a href="#about" class="menu-link">About</a>
+            <a href="#services" class="menu-link">Services</a>
+            <a href="#contact" class="menu-link">Contact</a>
+        </div>
+    </nav>
+    <div class="calculator">
+      <input type="text" class="display" readonly>
+      <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="appendNumber(7)">7</button>
+          <button onclick="appendNumber(8)">8</button>
+          <button onclick="appendNumber(9)">9</button>
+          <button onclick="appendOperator('/')">/</button>
+          <button onclick="appendNumber(4)">4</button>
+          <button onclick="appendNumber(5)">5</button>
+          <button onclick="appendNumber(6)">6</button>
+          <button onclick="appendOperator('*')">*</button>
+          <button onclick="appendNumber(1)">1</button>
+          <button onclick="appendNumber(2)">2</button>
+          <button onclick="appendNumber(3)">3</button>
+          <button onclick="appendOperator('-')">-</button>
+          <button onclick="appendNumber(0)">0</button>
+          <button onclick="appendDecimal('.')">.</button>
+          <button onclick="calculateResult()">=</button>
+          <button onclick="appendOperator('+')">+</button>
+      </div>
+  </div>
+  <div id="game">
+    <div id="character"></div>
+    <div id="block"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
